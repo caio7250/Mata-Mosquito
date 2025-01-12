@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Comic Sans MS";
+    src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot");
+    src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")format("svg");
+}
+
+#home {
+    background-image: url(src/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url(src/mata_mosca.png), auto;
+}
+
+
+#menu{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+
+    
+    img{
+        height: 70vh;
+        width: 70vh;
+    }
+
+    select{
+        width: 40%;
+        padding: 16px;
+        color: grey;
+        margin-bottom: 2vh;
+    }
+
+    button{
+        width: 20vh;
+        padding: 2vh;
+    }
+
+}
+
+#game{
+    background-image: url(src/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url(src/mata_mosca.png), auto;
+
+    #vidas{
+        background-color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        bottom: 0px;
+        width: 30vh;
+        padding: 1vh;
+
+        h3{
+            font-weight: bold;
+            font-family: sa;
+        }
+        
+    }
+
+    #mosca{
+        position: absolute;
+        display: none;
+    }
+}
