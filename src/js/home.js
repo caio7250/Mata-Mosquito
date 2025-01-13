@@ -26,10 +26,10 @@ function iniciaJogo(){
 
 function redirect(tempo){
     localStorage.setItem('gameTime', tempo);
-    window.location.href = 'http://127.0.0.1:5500/Game%20Mata%20Mosquito/game.html'
+    window.location.href = 'game.html'
 }
 
 function mainPage(){
-    window.location.href = 'http://127.0.0.1:5500/Game%20Mata%20Mosquito/home.html'
+    window.location.href = 'home.html'
 }
 

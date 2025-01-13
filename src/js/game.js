@@ -10,11 +10,11 @@ setInterval(mudaTempo, 1000)
 
 function mudaTempo(){
     if(vidas <= 0){
-        window.location.href = 'http://127.0.0.1:5500/Game%20Mata%20Mosquito/gameover.html'
+        window.location.href = 'gameover.html'
     }
 
     if(time <= 0){
-        window.location.href = 'http://127.0.0.1:5500/Game%20Mata%20Mosquito/vitoria.html'
+        window.location.href = 'vitoria.html'
     }
 
     criaMosquito()
@@ -42,17 +42,17 @@ function mudaVidas(){
     switch (vidas) {
         case 2:
             div = document.getElementById('vidas')
-            div.innerHTML = `<img src="src/coracao_cheio.png" alt=""><img src="src/coracao_cheio.png" alt=""><img src="src/coracao_vazio.png" alt=""><h3 id="tempo">Tempo Restante : ...</h3>`
+            div.innerHTML = `<img src="../assets/coracao_cheio.png" alt=""><img src="../assets/coracao_cheio.png" alt=""><img src="../assets/coracao_vazio.png" alt=""><h3 id="tempo">Tempo Restante : ...</h3>`
             break;
         
         case 1:
             div = document.getElementById('vidas')
-            div.innerHTML = `<img src="src/coracao_cheio.png" alt=""><img src="src/coracao_vazio.png" alt=""><img src="src/coracao_vazio.png" alt=""><h3 id="tempo">Tempo Restante : ...</h3>`
+            div.innerHTML = `<img src="../assets/coracao_cheio.png" alt=""><img src="../assets/coracao_vazio.png" alt=""><img src="../assets/coracao_vazio.png" alt=""><h3 id="tempo">Tempo Restante : ...</h3>`
             break;
         
         case 0:
             div = document.getElementById('vidas')
-            div.innerHTML = `<img src="src/coracao_vazio.png" alt=""><img src="src/coracao_vazio.png" alt=""><img src="src/coracao_vazio.png" alt=""><h3 id="tempo">Tempo Restante : ...</h3>`
+            div.innerHTML = `<img src="../assets/coracao_vazio.png" alt=""><img src="../assets/coracao_vazio.png" alt=""><img src="../assets/coracao_vazio.png" alt=""><h3 id="tempo">Tempo Restante : ...</h3>`
             break;
     
         default:
