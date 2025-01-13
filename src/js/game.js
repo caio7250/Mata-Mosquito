@@ -31,11 +31,16 @@ function mudaTempo(){
 
 function criaMosquito(){
 
-   mosca = document.getElementById('mosca')
-   mosca.style.display = 'inline'
-   mosca.style.width = `${Math.floor(Math.random() * (30) + 50)}px` 
-   mosca.style.left = `${Math.floor(Math.random() * larguraMaxPagina)}px` 
-   mosca.style.top = `${Math.floor(Math.random() * tamanhoMaxPagina)}px` 
+    mosca = document.getElementById('mosca')
+    mosca.style.display = 'inline'
+    mosca.style.width = `${Math.floor(Math.random() * (30) + 50)}px` 
+    let posicaoX = `${Math.floor(Math.random() * larguraMaxPagina - 90)}px` 
+    let posicaoY = `${Math.floor(Math.random() * tamanhoMaxPagina - 90)}px` 
+    posicaoX = posicaoX < 0? 0 : posicaoX
+    posicaoY = posicaoY < 0? 0 : posicaoY
+    mosca.style.left = posicaoX
+    mosca.style.top = posicaoY
+   
 }
 
 function mudaVidas(){
