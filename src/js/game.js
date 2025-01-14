@@ -73,7 +73,5 @@ function matouMosca(){
 function ajustaTamanhoJogo(){
     tamanhoMaxPagina = window.innerHeight - 40
     larguraMaxPagina = window.innerWidth - 40
-    console.log(tamanhoMaxPagina)
-    console.log(larguraMaxPagina)
 }
 
